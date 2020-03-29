@@ -1,0 +1,13 @@
+---
+name: Práctica Objetos y Mensajes
+locale: es
+type: practice
+beta: false
+teacher_info: ''
+language: wollok
+id_format: "%05d"
+order:
+- 1
+- 3
+- 4
+private: false

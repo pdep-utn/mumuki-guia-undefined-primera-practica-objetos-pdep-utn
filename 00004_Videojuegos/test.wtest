@@ -1,0 +1,119 @@
+test "existe delfina" {
+	delfina
+}
+
+test "existe play" {
+	play
+}
+
+test "existe portatil" {
+	portatil
+}
+
+test "existe arkanoid" {
+	arkanoid
+}
+
+test "existe mario" {
+	mario
+}
+
+test "existe pokemon" {
+	pokemon
+}
+
+
+test "play entiende jugabilidad" {
+	play.jugabilidad()
+}
+
+test "play entiende usar" {
+	play.usar()
+}
+
+test "portatil entiende jugabilidad" {
+	portatil.jugabilidad()
+}
+
+test "portatil entiende usar" {
+	portatil.usar()
+}
+
+test "delfina entiende jugar" {
+	delfina.jugar(mario)
+}
+
+test "delfina entiende diversion" {
+	delfina.diversion()
+}
+
+test "delfina entiende agarrar" {
+	delfina.agarrar(portatil)
+}
+
+
+test "diversion inicial de delfina" {
+	assert.equals(0, delfina.diversion())
+}
+
+test "jugabilidad de play" {
+	assert.equals(10, play.jugabilidad())
+}
+
+test "jugabilidad inicial de portatil" {
+	assert.equals(8, portatil.jugabilidad())
+}
+
+test "jugabilidad de portatil después de usarse" {
+	portatil.usar()
+	assert.equals(1, portatil.jugabilidad())
+}
+
+
+test "diversion de delfina después de jugar al arkanoid" {
+	delfina.jugar(arkanoid)
+	assert.equals(50, delfina.diversion())
+}
+
+test "diversion de delfina después de jugar al mario" {
+	delfina.jugar(mario)
+	assert.equals(100, delfina.diversion())
+}
+
+test "diversion de delfina después de jugar al pokemon" {
+	delfina.jugar(pokemon)
+	assert.equals(100, delfina.diversion())
+}
+
+
+test "diversion de delfina después de agarrar la portatil y jugar al arkanoid" {
+	delfina.agarrar(portatil)
+	delfina.jugar(arkanoid)
+	assert.equals(50, delfina.diversion())
+}
+
+test "diversion de delfina después de agarrar la portatil y jugar al mario" {
+	delfina.agarrar(portatil)
+	delfina.jugar(mario)
+	assert.equals(100, delfina.diversion())
+}
+
+test "diversion de delfina después de agarrar la portatil y jugar al mario dos veces" {
+	delfina.agarrar(portatil)
+	delfina.jugar(mario)
+	delfina.jugar(mario)
+	assert.equals(115, delfina.diversion())
+}
+
+test "diversion de delfina después de agarrar la portatil y jugar al pokemon" {
+	delfina.agarrar(portatil)
+	delfina.jugar(pokemon)
+	assert.equals(80, delfina.diversion())
+}
+
+test "diversion de delfina después de agarrar la portatil y jugar al pokemon dos veces" {
+	delfina.agarrar(portatil)
+	delfina.jugar(pokemon)
+	delfina.jugar(pokemon)
+	assert.equals(90, delfina.diversion())
+}
