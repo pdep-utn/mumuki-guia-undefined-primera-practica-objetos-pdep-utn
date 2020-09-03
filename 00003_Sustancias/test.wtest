@@ -19,12 +19,13 @@ test "logan entiende consumir" {
 }
 
 test "logan entiende fuerza" {
+  logan.consumir(15,clo2)
   logan.fuerza()
 }
 
 test "consumir clo2 produce la fuerza deseada" {
   logan.consumir(15,clo2)
-  assert.equals(72.06189,logan.fuerza())
+  assert.equals(72.0615,logan.fuerza())
 }
 
 test "consumir terere produce la fuerza deseada, cuando el rendimiento supera 1" {
