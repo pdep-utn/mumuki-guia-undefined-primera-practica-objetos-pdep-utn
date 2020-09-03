@@ -1,0 +1,48 @@
+test "existe logan" {
+  logan
+}
+
+test "existe el cianuro" {
+  cianuro
+}
+
+test "existe el terere" {
+  terere
+}
+
+test "existe el clo2" {
+  clo2
+}
+
+test "logan entiende consumir" {
+  logan.consumir(15,clo2)
+}
+
+test "logan entiende fuerza" {
+  logan.fuerza()
+}
+
+test "consumir clo2 produce la fuerza deseada" {
+  logan.consumir(15,clo2)
+  assert.equals(72.06189,logan.fuerza())
+}
+
+test "consumir terere produce la fuerza deseada, cuando el rendimiento supera 1" {
+  logan.consumir(20,terere)
+  assert.equals(700,logan.fuerza())
+}
+
+test "consumir terere produce la fuerza deseada, cuando el rendimiento es 1 " {
+  logan.consumir(9,terere)
+  assert.equals(350,logan.fuerza())
+}
+
+test "consumir cianuro produce la fuerza deseada" {
+  logan.consumir(15,cianuro)
+  assert.equals(0,logan.fuerza())
+}
+
+test "logan NO tiene un atributo fuerza" {
+	//TODO: Falta expectativa
+	assert.notThat(logan.toString().contains("fuerza"))
+}
