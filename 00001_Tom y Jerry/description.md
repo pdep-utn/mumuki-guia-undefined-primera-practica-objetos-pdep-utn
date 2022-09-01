@@ -1,8 +1,6 @@
-Queremos modelar la épica batalla entre un valiente gato y un vil ratón:
+Queremos modelar [la épica batalla entre un valiente gato y un vil ratón](https://www.youtube.com/watch?v=6oLPCTH4nWE):
 
-<iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=6oLPCTH4nWE">
-</iframe>
+<img src="https://www.clarin.com/img/2015/03/20/tom-y-jerry___BkMvVBAme_720x0.jpg" alt="tom y jerry" width="200"/>
 
 
 Esta batalla se basa en infinitas persecuciones de `tom` intentando atrapar a `jerry`, pero `jerry` siempre logra escapar, ya sea por sus propios medios, ó a veces con ayuda de su `robotRaton`, a quien usa como señuelo.
