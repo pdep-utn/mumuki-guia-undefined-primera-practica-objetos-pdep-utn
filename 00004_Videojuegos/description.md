@@ -1,4 +1,4 @@
-Queremos modelar cómo varía la diversión de `delfina`, una niña a la que le gusta jugar videojuegos.
+Queremos modelar cómo varía la diversión de `delfina`, una niña a la que le gusta jugar videojuegos. Comienza con la play.
 
 Las consolas que tiene disponibles son:
 
